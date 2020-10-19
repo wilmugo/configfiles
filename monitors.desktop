@@ -1,0 +1,12 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=XrandrStartup
+GenericName=XrandrStartup
+Comment= Xrandr config startup script
+Icon=preferences-system
+Categories=Settings;
+Exec=xrandr --output VGA-1 --off --output HDMI-1 --primary --mode 1680x1050 --pos 0x0 --rotate normal --output DP-1 --off --output eDP-1 --off
+TryExec=xrandr
+Terminal=false
+X-GNOME-Autostart-enable=true
