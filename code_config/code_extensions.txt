@@ -1,0 +1,12 @@
+dbaeumer.vscode-eslint
+dracula-theme.theme-dracula
+esbenp.prettier-vscode
+ms-python.python
+ms-toolsai.jupyter
+naumovs.theme-oceanicnext
+PKief.material-icon-theme
+ritwickdey.LiveServer
+sleistner.vscode-fileutils
+thekalinga.bootstrap4-vscode
+vscodevim.vim
+wesbos.theme-cobalt2
