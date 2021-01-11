@@ -4,7 +4,16 @@ call plug#begin("$HOME/.vim/plugged")
   let g:coc_global_extensions = ['coc-emmet', 'coc-css', 'coc-html', 'coc-json', 'coc-prettier', 'coc-tsserver', 'coc-python']
   " TypeScript Highlighting
   Plug 'leafgarland/typescript-vim'
+  Plug 'herringtondarkholme/yats.vim'
+  Plug 'othree/yajs.vim'
+  Plug 'maxmellon/vim-jsx-pretty'
   Plug 'peitalin/vim-jsx-typescript'
+
+  Plug 'jiangmiao/auto-pairs'
+  Plug 'tpope/vim-commentary'
+  Plug 'tpope/vim-surround'
+  Plug 'machakann/vim-highlightedyank'
+  Plug 'Yohannfra/Nvim-Switch-Buffer'
 
 
   " File Explorer with Icons

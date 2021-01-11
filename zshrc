@@ -109,6 +109,10 @@ alias pbpaste="xsel --clipboard --output"
 alias update="sudo apt update"
 alias upgrade="sudo apt upgrade"
 
+#editing fast with neovim
+alias nvi="vi ~/.config/nvim"
+alias zvi="vi ~/.zshrc"
+alias xrvi="vi ~/.Xresources"
 
 
 # alias zshconfig="mate ~/.zshrc"

@@ -3,6 +3,9 @@ let g:NERDTreeShowHidden = 1
 let g:NERDTreeMinimalUI = 1
 let g:NERDTreeIgnore = []
 let g:NERDTreeStatusline = ''
+"nredtree no linenumber
+let NERDTreeShowLineNumbers = 0
+autocmd BufEnter NERD_* setlocal nornu
 
 " Automaticaly close nvim if NERDTree is only thing left open
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
@@ -43,6 +46,10 @@ let g:fzf_action = {
   \ 'ctrl-s': 'split',
   \ 'ctrl-v': 'vsplit'
   \}
+
+" Highlighted yank (-1 for persistent)
+let g:highlightedyank_highlight_duration = 400
+
 
 " Airline Settings
 let g:airline_powerline_fonts = 1

@@ -14,12 +14,13 @@
   ],
   "python.linting.enabled": true,
   "python.linting.pylintEnabled": true,
-  "eslint.filetypes": [
-    "javascript",
-    "typescript",
-    "typescriptreact",
-    "javascriptreact",
-    "typescript.tsx"
-  ],
+  //  "eslint.autoFixOnSave": true,
+  //  "eslint.filetypes": [
+  //    "javascript",
+  //   "typescript",
+  //    "javascriptreact",
+  //    "typescriptreact",
+  //    "typescript.tsx"
+  //  ],
   "coc.preferences.diagnostic.virtualText": true
 }

@@ -9,7 +9,7 @@ Xft.hintstyle: hintfull
 Xft.lcdfilter: lcddefault
 
 !! Transparency (0-1):
-*.alpha: 0.9
+*.alpha: 0.95
 
 !! Set a default font and font size as below:
 *.font:Iosevka Custom:size=13
