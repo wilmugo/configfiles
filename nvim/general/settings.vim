@@ -10,6 +10,7 @@
 let g:mapleader = ","
 filetype plugin indent on
 
+set nocursorline                        "Highlight the line on which the cursor lives"
 set hidden                               " Display long lines as just one line
 set encoding=utf-8                      " The encoding displayed
 set pumheight=10                        " Makes popup menu smaller
@@ -43,6 +44,7 @@ set formatoptions-=cro                  " Stop newline continution of comments
 set clipboard=unnamedplus               " Copy paste between vim and everything else
 "set autochdir                           " Your working directory will always be the same as your working directory
 set matchpairs+=<:>                     "Highlight matching of brackets use the % to jump
+set fillchars=vert::
 set list                                "Display different types of white spaces
 set listchars=tab:›\ ,trail:•,extends:#,nbsp:.
 "Toggle relative and normal number of the line

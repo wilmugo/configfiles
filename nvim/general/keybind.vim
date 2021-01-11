@@ -18,15 +18,15 @@ tnoremap <C-l> <C-\><C-N><C-w>l
 nnoremap <silent><leader>f :SwitchBuffer<CR>
 
 " Toggle NERDTree
-nnoremap <silent> <C-n> :NERDTreeToggle<CR>
+nnoremap <silent><C-n> :NERDTreeToggle<CR>
 
 " FZF keybind
-nnoremap <silent> <C-p> :FZF<CR>
+nnoremap <silent><C-p> :FZF<CR>
 
 " Ctrl+s save file
 nmap <C-s> :w<CR>
-vmap <C-s> :w<CR>
-imap <C-s> :w<CR>
+vmap <C-s> <ESC>:w<CR>
+imap <C-s> <ESC>:w<CR>
 
 " clear search ESC
 nnoremap <silent><ESC> :noh<CR><ESC>
@@ -43,3 +43,6 @@ nnoremap <silent><leader>t :term<CR>
 tnoremap <Esc> <C-\><C-n>
 tnoremap <silent><leader>f <C-\><C-N>:SwitchBuffer<CR>
 
+"split right and below
+nmap <silent><leader>s :vsplit<CR>
+nmap <silent><leader>d :split<CR>

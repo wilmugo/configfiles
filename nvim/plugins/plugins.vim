@@ -14,6 +14,9 @@ call plug#begin("$HOME/.vim/plugged")
   Plug 'tpope/vim-surround'
   Plug 'machakann/vim-highlightedyank'
   Plug 'Yohannfra/Nvim-Switch-Buffer'
+  Plug 'tpope/vim-fugitive'
+  Plug 'jmcantrell/vim-virtualenv'
+  Plug 'mattn/emmet-vim'
 
 
   " File Explorer with Icons
