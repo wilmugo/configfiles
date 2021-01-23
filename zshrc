@@ -113,6 +113,7 @@ alias upgrade="sudo apt upgrade"
 alias nvi="vi ~/.config/nvim"
 alias zvi="vi ~/.zshrc"
 alias xrvi="vi ~/.Xresources"
+alias ytdl="youtube-dl -iwc"
 
 
 # alias zshconfig="mate ~/.zshrc"

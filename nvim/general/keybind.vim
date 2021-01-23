@@ -46,3 +46,15 @@ tnoremap <silent><leader>f <C-\><C-N>:SwitchBuffer<CR>
 "split right and below
 nmap <silent><leader>s :vsplit<CR>
 nmap <silent><leader>d :split<CR>
+
+
+""fzf keymapings
+"map <C-f> :Files<CR>
+"map <leader>b :Buffers<CR>
+"nnoremap <leader>g :Rg<CR>
+"nnoremap <leader>c :Tags<CR>
+"nnoremap <leader>m :Marks<CR>
+if has("nvim")
+  au TermOpen * tnoremap <Esc> <c-\><c-n>
+  au FileType fzf tunmap <Esc>
+endif
