@@ -1,5 +1,5 @@
 {
-  "workbench.colorTheme": "Cobalt2",
+  "workbench.colorTheme": "Dracula",
   "workbench.editor.showTabs": false,
   "editor.minimap.enabled": false,
   "editor.fontFamily": "Iosevka Custom",
@@ -15,6 +15,7 @@
   "editor.cursorBlinking": "solid",
   "editor.renderWhitespace": "all",
   "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.wordWrap": "on",
   "telemetry.enableTelemetry": false,
   "files.trimTrailingWhitespace": true,
   "workbench.iconTheme": "material-icon-theme",
@@ -35,6 +36,7 @@
   "vim.easymotion": true,
   "vim.incsearch": true,
   "vim.useSystemClipboard": true,
+  "vim.foldfix": true,
   "vim.useCtrlKeys": true,
   "vim.hlsearch": true,
   "vim.insertModeKeyBindings": [
@@ -79,6 +81,13 @@
     {
       "before": ["<C-n>"],
       "commands": ["fileutils.newFile"]
+    },
+    {
+      "before": ["<leader>", "a"],
+      "commands": ["workbench.action.toggleActivityBarVisibility"]
     }
-  ]
+  ],
+  "workbench.startupEditor": "newUntitledFile",
+  "window.menuBarVisibility": "toggle",
+  "workbench.activityBar.visible": false
 }
