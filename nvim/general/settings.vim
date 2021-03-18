@@ -47,12 +47,18 @@ set matchpairs+=<:>                     "Highlight matching of brackets use the 
 set fillchars=vert::
 set list                                "Display different types of white spaces
 set listchars=tab:›\ ,trail:•,extends:#,nbsp:.
+autocmd FileType html,css,javascript.jsx EmmetInstall
+
 "Toggle relative and normal number of the line
 augroup numberToggle
-  autocmd!
-  autocmd BufEnter,FocusGained,InsertLeave * set relativenumber
-  autocmd BufLeave,FocusLost,InsertEnter * set norelativenumber
+    autocmd!
+    autocmd BufEnter,FocusGained,InsertLeave * set relativenumber
+    autocmd BufLeave,FocusLost,InsertEnter * set norelativenumber
 augroup END
+
+"set no number line in terminal mode
+autocmd TermEnter * setlocal nonumber norelativenumber
+autocmd BufEnter,BufWinEnter,WinEnter term://* startinsert
 
 " Restore last cursor position and marks on open
 au BufReadPost *

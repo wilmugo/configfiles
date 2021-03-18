@@ -120,3 +120,9 @@ let g:airline#extensions#fzf#enabled = 1
 let g:airline#extensions#coc#enabled = 1
 let g:airline#extensions#virtualenv#enabled = 1
 
+" Emmet Settings 
+let g:user_emmet_settings = {
+\  'javascript' : {
+\      'extends' : 'jsx',
+\  },
+\}

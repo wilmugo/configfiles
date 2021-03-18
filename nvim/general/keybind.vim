@@ -33,15 +33,39 @@ nnoremap <silent><ESC> :noh<CR><ESC>
 
 " open terminal on ,+t
 " uses zsh instead of bash
-" function OpenTerminal()
+"function! OpenTerminal()
 "   split term://zsh
-"   resize 10
-" endfunction
-nnoremap <silent><leader>t :term<CR>
+"   resize 15
+"endfunction
+"nnoremap <silent><leader>t :call OpenTerminal()<CR>
+"Terminal Toggle
+let g:term_buf = 0
+let g:term_win = 0
+function! TermToggle(height)
+  if win_gotoid(g:term_win)
+    hide
+  else
+    botright new
+    exec "resize " . a:height
+    try
+      exec "buffer " . g:term_buf
+    catch
+      call termopen($SHELL, {"detach": 0})
+      let g:term_buf = bufnr("")
+      set nonumber
+      set norelativenumber
+      set signcolumn=no
+    endtry
+    startinsert!
+    let g:term_win = win_getid()
+  endif
+endfunction
 
+nnoremap <silent><leader>t :call TermToggle(12)<CR>
+tnoremap <silent><leader>t <C-\><C-n>:call TermToggle(12)<CR>
 " turn terminal to normal mode with escape
 tnoremap <Esc> <C-\><C-n>
-tnoremap <silent><leader>f <C-\><C-N>:SwitchBuffer<CR>
+"tnoremap <silent><leader>f <C-\><C-N>:SwitchBuffer<CR>
 
 "split right and below
 nmap <silent><leader>s :vsplit<CR>
