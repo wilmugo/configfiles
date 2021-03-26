@@ -23,6 +23,8 @@ autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists('s:std_in
 
 let g:NERDTreeDirArrowExpandable = '▸'
 let g:NERDTreeDirArrowCollapsible = '▾'
+let g:NERDTreeIgnore = ['^\.DS_Store$', '^tags$', '\.git$[[dir]]', '\.idea$[[dir]]', '\.sass-cache$']
+
 
 "set git options on NERDTree
 let g:NERDTreeGitStatusIndicatorMapCustom = {
@@ -119,6 +121,10 @@ endif
 let g:airline#extensions#fzf#enabled = 1
 let g:airline#extensions#coc#enabled = 1
 let g:airline#extensions#virtualenv#enabled = 1
+let g:airline_filetype_overrides = {
+  \ 'nerdtree': [ get(g:, 'NERDTreeStatusline', ''), '' ],
+  \ 'list': [ '%y', '%l/%L'],
+  \ }
 
 " Emmet Settings 
 let g:user_emmet_settings = {

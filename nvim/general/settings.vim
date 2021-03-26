@@ -44,9 +44,20 @@ set formatoptions-=cro                  " Stop newline continution of comments
 set clipboard=unnamedplus               " Copy paste between vim and everything else
 "set autochdir                           " Your working directory will always be the same as your working directory
 set matchpairs+=<:>                     "Highlight matching of brackets use the % to jump
+" Don't pass messages to |ins-completion-menu|.
+set shortmess+=c
 set fillchars=vert::
 set list                                "Display different types of white spaces
 set listchars=tab:›\ ,trail:•,extends:#,nbsp:.
+" Always show the signcolumn, otherwise it would shift the text each time
+" diagnostics appear/become resolved.
+if has("patch-8.1.1564")
+  " Recently vim can merge signcolumn and number column into one
+  set signcolumn=number
+else
+  set signcolumn=yes
+endif
+
 autocmd FileType html,css,javascript.jsx EmmetInstall
 
 "Toggle relative and normal number of the line
